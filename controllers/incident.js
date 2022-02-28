@@ -1,4 +1,5 @@
 const axios = require("axios");
+console.log("Creating Incident....")
 exports.createIncident = async(req, res) => {
     let requestBody = {
         'short_description': req.body.short_description,
@@ -25,7 +26,6 @@ exports.createIncident = async(req, res) => {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
             'Authorization': 'Basic ' + Buffer.from('admin'+':'+'QWE0Ymf1mAkw').toString('base64'),
-            // 'Authorization': 'Basic '+btoa('admin'+':'+'admin'),
         }
     })
     .then(function (response) {

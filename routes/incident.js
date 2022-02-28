@@ -3,11 +3,11 @@ const authCheck = require("../middleware/check-auth");
 const {createIncident} = require("../controllers/incident");
 
 /**
- * @description   this route is used to get loggedin user info
- * @route   GET      /user/
+ * @description   this route is used to create Incident
+ * @route   GET      /api/incident/
  * @access  Private
  */
-// router.get("/", authCheck, createIncident);
-router.get("/", createIncident);
+router.get("/", authCheck, createIncident);
+// router.get("/", createIncident);
 
 module.exports = router;
