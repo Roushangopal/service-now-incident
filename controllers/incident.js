@@ -1,6 +1,6 @@
 const axios = require("axios");
-console.log("Creating Incident....")
 exports.createIncident = async(req, res) => {
+    console.log("Creating Incident....");
     let requestBody = {
         'short_description': req.body.short_description,
         'description': req.body.description,
@@ -19,13 +19,13 @@ exports.createIncident = async(req, res) => {
         'location': 'Bengaluru'
     }
 
-    axios.post('https://dev88458.service-now.com/api/now/table/incident',
+    axios.post(process.env.SNOW_LINK,
     requestBody,
     {
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'Authorization': 'Basic ' + Buffer.from('admin'+':'+'QWE0Ymf1mAkw').toString('base64'),
+            'Authorization': 'Basic ' + Buffer.from(process.env.USER_ID+':'+process.env.PASSWORD).toString('base64'),
         }
     })
     .then(function (response) {

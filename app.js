@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const morgan = require('morgan');
+require('dotenv').config();
 
 /**importing routes */
 const incident = require("./routes/incident");

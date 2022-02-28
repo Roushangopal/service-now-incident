@@ -1,4 +1,0 @@
-Your instance URL:https://dev88458.service-now.com
-
-Username: admin
-Current password: QWE0Ymf1mAkw
