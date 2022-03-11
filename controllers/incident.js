@@ -1,6 +1,7 @@
 const axios = require("axios");
 exports.createIncident = async(req, res) => {
     console.log("Creating Incident....");
+    console.log(req.body)
     let requestBody = {
         "short_description": req.body.short_description,
         "description": req.body.description,
