@@ -8,6 +8,6 @@ const {createIncident} = require("../controllers/incident");
  * @access  Private
  */
 // router.post("/", authCheck, createIncident);
-router.get("/", createIncident);
+router.post("/", createIncident);
 
 module.exports = router;
