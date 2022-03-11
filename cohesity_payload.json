@@ -1,0 +1,23 @@
+{
+  "alertType": "13021",
+  "alertId": "1234",
+  "alertName": "NodeRebooted",
+  "alertDescription": "Node with ID 1234 rebooted",
+  "alertSeverity": "kCritical",
+  "alertCategory": "kNodeHealth",
+  "alertCause": "Node rebooted.",
+  "alertHelpText": "Please refer to KB for details/resolution.",
+  "languageCode": "en-us",
+  "alertUrl":"https://prod.cohesity.com/monitoring/alerts/alert/1234:5678",
+  "clusterName": "dell01",
+  "clusterId": "1234",
+  "alertCode": "CE001234",
+  "alertProperties": {
+    "node_id": "123431",
+    "node_ip": "prod.cohesity.com",
+    "alert_description": "Node rebooted due to power failure.",
+    "reason_string": "Node Rebooted."
+  },
+  "firstOccuranceUsecs": "1574289325258262",
+  "lastOccuranceUsecs": "1574289325258262"
+} 
