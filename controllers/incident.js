@@ -16,7 +16,7 @@ exports.createIncident = async(req, res) => {
         "severity": "3",
         "category": "Software",
         "subcategory": "Email",
-        "company": "New Look",
+        "company": "Acc",
         "location": "Bengaluru"
     }
 
